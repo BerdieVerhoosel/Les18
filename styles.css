@@ -1,0 +1,78 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("vermeer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header { 
+    max-width: 100%;
+    padding: 2%;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer {
+    clear: left;
+    padding: 2px;
+}
+
+img {
+    max-height: 150px;
+    float: right;
+    padding: 5px;
+    margin: 5px;
+    filter: grayscale(60%);
+}
+
+.flex-container {
+    display: flex;
+    background-color:rgba(000, 000, 000, 0.5);
+}
+
+.col-2 {
+    width: 16,66%;
+    background-color:rgba(000, 000, 000, 0.0);
+    padding: 15px;
+    margin-right: 5%;
+    color: white;
+}
+
+.col-9 {
+    width: 74,97%;
+    background-color:rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    margin-right: 3,33%;
+    color:w
+}
+
+.article-1 {
+    margin: 2px;
+    padding: 5px;
+}
+
+.article-2 {
+    margin: 2px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    image {
+        max-height: 100px;
+    }
+    body {
+        font-size: smaller;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .flex-container {
+        flex-direction: row;
+    }
+}
+
